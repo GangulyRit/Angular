@@ -37,13 +37,13 @@ export class AppComponent {
     }
 
     trackCourse(course) {
-        return course ? course.id : undefined;  //For trackBy
+        return course ? course.id : undefined;   //For trackBy
     }
 
     isSelected = false; //For [ngClass]   TODo
 
     onClick() {
-        this.isSelected = !this.isSelected;   //For [ngClass]     TODo
+        this.isSelected = !this.isSelected;    //For [ngClass]     TODo
     }
 
     canSave = true;   //For [ngStyle]
