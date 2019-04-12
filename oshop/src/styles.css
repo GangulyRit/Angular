@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-html,
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
 body {
-  font-family: sans-serif;
+  padding-top: 80px
 }
