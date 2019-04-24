@@ -4,6 +4,7 @@ import { environment } from "./../environments/environment";
 import { AngularFireModule } from "angularfire2";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { AngularFireAuthModule } from "angularfire2/auth";
+import { RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { BsNavbarComponent } from "./bs-navbar/bs-navbar.component";
@@ -14,7 +15,11 @@ import { BsNavbarComponent } from "./bs-navbar/bs-navbar.component";
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
