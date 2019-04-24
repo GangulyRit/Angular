@@ -16,10 +16,12 @@ import { OrderSuccessComponent } from "./order-success/order-success.component";
 import { ProductsComponent } from "./products/products.component";
 import { ShoppingCartComponent } from "./shopping-cart/shopping-cart.component";
 
+
 @NgModule({
   declarations: [
     AppComponent,
     BsNavbarComponent,
+    CheckOutComponent,
     HomeComponent,
     MyOrdersComponent,
     LoginComponent,
