@@ -8,16 +8,35 @@ import { RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { BsNavbarComponent } from "./bs-navbar/bs-navbar.component";
+import { CheckOutComponent } from "./check-out/check-out.component";
+import { HomeComponent } from "./home/home.component";
+import { LoginComponent } from "./login/login.component";
+import { MyOrdersComponent } from "./my-orders/my-orders.component";
+
+// import { OrderSuccessComponent } from "./order-success/order-success.component";
 
 @NgModule({
-  declarations: [AppComponent, BsNavbarComponent],
+  declarations: [
+    AppComponent,
+    BsNavbarComponent,
+    HomeComponent,
+    MyOrdersComponent,
+    LoginComponent
+    // OrderSuccessComponent
+  ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path: "", component: HomeComponent },
+      { path: "login", component: LoginComponent },
+      { path: "check-out", component: CheckOutComponent },
+      { path: "products", component: ProductsComponent },
+      { path: "shopping-cart", component: ShoppingCartComponent },
+
+      { path: "order-success", component: OrderSuccessComponent },
       
     ])
   ],
