@@ -11,6 +11,5 @@ export class BsNavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-
   }
 }
